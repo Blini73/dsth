@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="copyright">
-        <p>Copyright Amar Bytyqi - All Rights Reserved</p>
+        <p>Copyright Blin Mehmeti - All Rights Reserved</p>
     </div>
     <nav class="footer-menu">
     <?php 
