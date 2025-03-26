@@ -26,9 +26,53 @@ function dstheme_config(){
             'width'=>200,
             'height'=>110,
             'flex-height'=> true,
-            'flex-width' = true
+            'flex-width' => true
         ));
         }
 
 
 add_action('after_setup_theme', 'dstheme_config', 0);
+add_action('widgets_init', 'dstheme_sidebars');
+
+function dstheme_sidebars (){
+    register_sidebar(
+    array(
+        'name' => 'Blog Sidebar',
+        'id' => 'sidebar-blog',
+        'description' => 'This is the blog sidebar.You can add your widgets here',
+        'before_widget' => '<div class = "widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class = "widget-title">'
+    )
+    );
+}
+register_sidebar(
+    array(
+        'name' => 'Service 1',
+        'id' => 'service-2',
+        'description' => 'First Service Area',
+        'before_widget' => '<div class = "widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class = "widget-title">'
+    )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Service 2',
+            'id' => 'service-2',
+            'description' => 'Second Service Area',
+            'before_widget' => '<div class = "widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class = "widget-title">'
+        )
+        );
+        register_sidebar(
+            array(
+                'name' => 'Service 3',
+                'id' => 'service-3',
+                'description' => 'Third Service Area',
+                'before_widget' => '<div class = "widget-wrapper">',
+                'after_widget' => '</div>',
+                'before_title' => '<h4 class = "widget-title">'
+            )
+            );
