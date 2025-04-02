@@ -49,11 +49,12 @@ function dstheme_sidebars (){
 register_sidebar(
     array(
         'name' => 'Service 1',
-        'id' => 'service-2',
+        'id' => 'service-1',
         'description' => 'First Service Area',
         'before_widget' => '<div class = "widget-wrapper">',
         'after_widget' => '</div>',
         'before_title' => '<h4 class = "widget-title">'
+        
     )
     );
     register_sidebar(
@@ -64,6 +65,7 @@ register_sidebar(
             'before_widget' => '<div class = "widget-wrapper">',
             'after_widget' => '</div>',
             'before_title' => '<h4 class = "widget-title">'
+            
         )
         );
         register_sidebar(
@@ -74,5 +76,6 @@ register_sidebar(
                 'before_widget' => '<div class = "widget-wrapper">',
                 'after_widget' => '</div>',
                 'before_title' => '<h4 class = "widget-title">'
+                
             )
             );
