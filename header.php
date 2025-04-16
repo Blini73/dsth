@@ -22,7 +22,7 @@
             ?>
         </div>
         <div class="searchbox">
-          <? get_search_form(); ?>
+          <?php get_search_form(); ?>
         </div>
     </section>    
     <section class="menu-area">
