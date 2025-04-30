@@ -18,20 +18,10 @@
                          <?php
                          if(have_posts() ) :
                          while(have_posts() )  :  the_post();
-                                ?>
-                                <article>
-                                    <h2><?php the_title();  ?></h2>
-                                    <?php the_post_thumbnail(array(275, 275));   ?>
-                                    <div class="meta-info">
-                                    
-                                    <p>Posted in by <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?></p>
-                                    <p>Categories:</p>
-                                    <p>Tags:</p>
-                                    </div>
-                                    <?php the_content(); ?>
-                                </article>
-                                <?php
-                                endwhile;
+                             get_template_part('parts/content');   
+                                
+                                
+                                endwhile;?>
                                 ?>
                         <div class="wpdevs-pagination">
                              <div class="pasges new">

@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<?php wp_body_open(); ?>
 <header>
     <section class="top-bar">
     <div class="container">
@@ -24,7 +24,8 @@
         <div class="searchbox">
           <?php get_search_form(); ?>
         </div>
-    </section>    
+    </section>
+    <?php if(is_page('landing-page')): ?>    
     <section class="menu-area">
         <div class="container">
             <nav class="main-menu">
@@ -41,4 +42,5 @@
                 </nav>
         </div>
     </section>
+    <?php endif; ?>
 </header>

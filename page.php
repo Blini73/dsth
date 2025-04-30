@@ -7,12 +7,7 @@
                     <?php
                     // Directly start the loop, assuming there are posts
                     while (have_posts()) : the_post();  
-                    ?>
-                        <article>
-                            <h1><?php the_title(); ?></h1>
-                            <?php the_content(); ?>
-                        </article>
-                    <?php
+                    get_template_part('parts/content', 'page');
                     endwhile;
                     ?>
                 </div>
